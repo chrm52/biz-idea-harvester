@@ -19,7 +19,7 @@ interface UserFormData {
   hobbies?: string[]; // Add hobbies field
 }
 
-// This is a small sample of the business ideas database
+// This is a sample of the business ideas database
 // In a production app, this would be replaced with your 2000+ ideas dataset
 // The actual implementation would likely load this from an external JSON file or API
 const businessIdeasDatabase: BusinessIdea[] = [
@@ -322,6 +322,506 @@ const businessIdeasDatabase: BusinessIdea[] = [
     timeCommitment: "medium",
     potentialReturn: "medium",
     tags: ["Tourism", "Local", "Experience"]
+  },
+  {
+    id: "31",
+    title: "AI-Powered T-Shirt Design Platform",
+    description: "Use AI to generate custom T-shirt designs for online sale. Perfect for global e-commerce with AI automation.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "medium",
+    potentialReturn: "high",
+    tags: ["AI", "E-commerce", "Fashion", "Design", "Technology"]
+  },
+  {
+    id: "32",
+    title: "Virtual Reality Job Training Platform",
+    description: "Train workers for skilled physical labor using VR technology. Global reach with strong education/tech focus.",
+    investmentLevel: "high",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["VR", "Education", "Technology", "Training"]
+  },
+  {
+    id: "33",
+    title: "AI-Driven Marketing Agency",
+    description: "Offer cost-effective marketing solutions for SMBs using AI automation. Global reach with scalable systems.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "medium",
+    potentialReturn: "high",
+    tags: ["Marketing", "AI", "Business Services"]
+  },
+  {
+    id: "34",
+    title: "Sustainable Fashion Marketplace",
+    description: "Create an online marketplace for selling organic and sustainable clothing. Focus on the Spanish market with global potential.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["Fashion", "E-commerce", "Sustainability", "Retail"]
+  },
+  {
+    id: "35",
+    title: "Remote Cybersecurity Consulting",
+    description: "Help businesses secure their digital operations with remote cybersecurity consulting. Global service with high demand.",
+    investmentLevel: "low",
+    difficulty: "expert",
+    timeCommitment: "medium",
+    potentialReturn: "high",
+    tags: ["Cybersecurity", "Consulting", "Technology", "Business Services"]
+  },
+  {
+    id: "36",
+    title: "AI-Powered Personal Finance App",
+    description: "Create an app that helps people manage finances in a changing economy using AI for personalized advice and automation.",
+    investmentLevel: "medium",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Finance", "AI", "Technology", "Mobile Apps"]
+  },
+  {
+    id: "37",
+    title: "Online Local Compute Cluster Service",
+    description: "Provide access to local compute clusters for communities needing computing power. US-focused with community benefits.",
+    investmentLevel: "high",
+    difficulty: "expert",
+    timeCommitment: "medium",
+    potentialReturn: "medium",
+    tags: ["Technology", "Computing", "Community", "Infrastructure"]
+  },
+  {
+    id: "38",
+    title: "E-commerce for 3D-Printed Medicines",
+    description: "Develop a platform for selling personalized 3D-printed medicines online with proper regulatory compliance.",
+    investmentLevel: "high",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Healthcare", "E-commerce", "3D Printing", "Technology"]
+  },
+  {
+    id: "39",
+    title: "AI-Enhanced Language Learning App",
+    description: "Create a language learning application that uses AI to personalize the learning experience for each user.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Education", "Languages", "AI", "Mobile Apps"]
+  },
+  {
+    id: "40",
+    title: "Online Renewable Energy Consulting",
+    description: "Provide consulting services for businesses looking to adopt renewable energy solutions, with a focus on the Spanish market.",
+    investmentLevel: "low",
+    difficulty: "intermediate",
+    timeCommitment: "medium",
+    potentialReturn: "medium",
+    tags: ["Energy", "Consulting", "Sustainability", "Business Services"]
+  },
+  {
+    id: "41",
+    title: "Hyperlocal Food Co-op",
+    description: "Establish a community-based food cooperative to grow organic food for local residents in Seattle, USA.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["Food", "Agriculture", "Community", "Sustainability"]
+  },
+  {
+    id: "42",
+    title: "Solar Installation Business",
+    description: "Start a business installing solar panels for homes and businesses in Madrid, Spain, capitalizing on renewable energy trends.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Energy", "Installation", "Sustainability", "Construction"]
+  },
+  {
+    id: "43",
+    title: "Skilled Physical Labor Training Center",
+    description: "Create a training center in Chicago, USA to teach workers valuable physical labor skills for the changing job market.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["Education", "Training", "Labor", "Vocational"]
+  },
+  {
+    id: "44",
+    title: "Organic Farming Business",
+    description: "Establish an organic farming operation in Barcelona, Spain to grow and sell sustainable produce locally.",
+    investmentLevel: "high",
+    difficulty: "intermediate",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["Agriculture", "Farming", "Sustainability", "Food"]
+  },
+  {
+    id: "45",
+    title: "Local Energy Storage Solutions",
+    description: "Provide battery storage solutions in Austin, USA to help communities achieve energy independence.",
+    investmentLevel: "high",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Energy", "Storage", "Technology", "Sustainability"]
+  },
+  {
+    id: "46",
+    title: "Biotech Research Lab",
+    description: "Establish a research laboratory in Valencia, Spain focused on biotechnology solutions for sustainable development.",
+    investmentLevel: "high",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Biotech", "Research", "Healthcare", "Science"]
+  },
+  {
+    id: "47",
+    title: "Community-Run Makerspace",
+    description: "Create a shared workshop in Portland, USA where locals can create, repair, and repurpose goods.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "high",
+    potentialReturn: "low",
+    tags: ["Community", "Maker", "Workshop", "Education"]
+  },
+  {
+    id: "48",
+    title: "Sustainable Construction Firm",
+    description: "Start a construction company in Miami, USA specializing in building eco-friendly, sustainable homes and buildings.",
+    investmentLevel: "high",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Construction", "Sustainability", "Architecture", "Real Estate"]
+  },
+  {
+    id: "49",
+    title: "Local Food Truck with Organic Menu",
+    description: "Launch a food truck in London, UK offering organic, locally-sourced meals with a focus on personal connection.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["Food", "Organic", "Hospitality", "Culinary"]
+  },
+  {
+    id: "50",
+    title: "Elder Care Facility with Human Touch",
+    description: "Create a care facility in Tokyo, Japan that emphasizes human connection and personalized care for the elderly.",
+    investmentLevel: "high",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["Healthcare", "Elder Care", "Service", "Wellness"]
+  },
+  {
+    id: "51",
+    title: "AI-Assisted Urban Farming Consultancy",
+    description: "Combine AI technology with urban farming expertise to offer online advice and on-site setup in New York, USA.",
+    investmentLevel: "medium",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Agriculture", "Urban Farming", "AI", "Consulting"]
+  },
+  {
+    id: "52",
+    title: "E-commerce with Local Pickup for Sustainable Goods",
+    description: "Create an online store for sustainable products in Berlin, Germany with convenient local pickup options.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["E-commerce", "Sustainability", "Retail", "Local Business"]
+  },
+  {
+    id: "53",
+    title: "Hybrid Renewable Energy Training Program",
+    description: "Offer a combination of online courses and in-person workshops in Sydney, Australia teaching renewable energy skills.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["Education", "Energy", "Training", "Sustainability"]
+  },
+  {
+    id: "54",
+    title: "AI-Powered Local Event Planning",
+    description: "Use AI to plan events online and execute them offline in Paris, France, combining technology with personal touch.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["Events", "AI", "Planning", "Hospitality"]
+  },
+  {
+    id: "55",
+    title: "Online-to-Offline Repair Service",
+    description: "Create an app in Toronto, Canada that connects people with local repair services for various items.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "medium",
+    potentialReturn: "medium",
+    tags: ["Service", "Repair", "App", "Local Business"]
+  },
+  {
+    id: "56",
+    title: "Hybrid Fitness Studio with AI Coaching",
+    description: "Combine in-person fitness classes in Los Angeles, USA with AI-driven online coaching for comprehensive wellness.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Fitness", "AI", "Health", "Wellness"]
+  },
+  {
+    id: "57",
+    title: "Local Compute Cluster with Online Training",
+    description: "Establish compute clusters in Cape Town, South Africa with complementary online training for community use.",
+    investmentLevel: "high",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["Technology", "Computing", "Education", "Community"]
+  },
+  {
+    id: "58",
+    title: "Sustainable Catering with Online Ordering",
+    description: "Launch a sustainable catering service in Stockholm, Sweden that takes orders online for convenient, eco-friendly food service.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["Food", "Catering", "Sustainability", "E-commerce"]
+  },
+  {
+    id: "59",
+    title: "AI-Enhanced Local Art Gallery",
+    description: "Create an art gallery in Seoul, South Korea that uses AI for online curation while offering offline exhibitions.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "medium",
+    potentialReturn: "medium",
+    tags: ["Art", "AI", "Gallery", "Culture"]
+  },
+  {
+    id: "60",
+    title: "Hybrid Childcare with AI Monitoring",
+    description: "Offer in-person childcare in Singapore with AI monitoring technology that keeps parents connected.",
+    investmentLevel: "medium",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["Childcare", "AI", "Education", "Family"]
+  },
+  {
+    id: "61",
+    title: "AI-Driven Supply Chain Analytics Firm",
+    description: "Help global businesses optimize their supply chains using advanced AI analytics and predictive modeling.",
+    investmentLevel: "medium",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Logistics", "AI", "Supply Chain", "Business Services"]
+  },
+  {
+    id: "62",
+    title: "Off-Grid Solar Solutions Provider",
+    description: "Develop and install off-grid solar power systems in Nairobi, Kenya and surrounding areas to provide reliable energy.",
+    investmentLevel: "high",
+    difficulty: "intermediate",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["Energy", "Solar", "Sustainability", "Infrastructure"]
+  },
+  {
+    id: "63",
+    title: "Online Platform for Local Artisans",
+    description: "Create a marketplace connecting local artisans in Mumbai, India with global customers while preserving traditional crafts.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["E-commerce", "Crafts", "Artisans", "Cultural"]
+  },
+  {
+    id: "64",
+    title: "Sustainable Packaging Manufacturer",
+    description: "Produce eco-friendly packaging alternatives in Amsterdam, Netherlands to help businesses reduce environmental impact.",
+    investmentLevel: "high",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Manufacturing", "Packaging", "Sustainability", "Production"]
+  },
+  {
+    id: "65",
+    title: "Local Water Purification Business",
+    description: "Provide affordable water purification solutions in Lagos, Nigeria to address local water quality challenges.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["Water", "Utilities", "Health", "Community"]
+  },
+  {
+    id: "66",
+    title: "AI-Powered Legal Tech Platform",
+    description: "Develop AI tools to help legal professionals streamline documentation, research, and case management globally.",
+    investmentLevel: "medium",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Legal", "AI", "Technology", "Business Services"]
+  },
+  {
+    id: "67",
+    title: "Community-Owned Internet Service",
+    description: "Establish community-owned internet infrastructure in rural USA to provide affordable, reliable connectivity.",
+    investmentLevel: "high",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["Internet", "Infrastructure", "Community", "Technology"]
+  },
+  {
+    id: "68",
+    title: "Eco-Friendly Laundry Service",
+    description: "Start a laundry service in Dubai, UAE using water-saving technologies and eco-friendly detergents.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["Service", "Laundry", "Sustainability", "Environment"]
+  },
+  {
+    id: "69",
+    title: "Online Platform for Barter Trade",
+    description: "Create a global online platform facilitating barter trade of goods and services without monetary exchange.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["E-commerce", "Barter", "Exchange", "Community"]
+  },
+  {
+    id: "70",
+    title: "Local Waste Recycling Plant",
+    description: "Establish a recycling facility in Sao Paulo, Brazil focusing on plastic waste and other recoverable materials.",
+    investmentLevel: "high",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["Recycling", "Waste Management", "Sustainability", "Environment"]
+  },
+  {
+    id: "71",
+    title: "AI-Assisted Mental Health App",
+    description: "Develop an app using AI to provide mental health support, coping strategies, and professional referrals globally.",
+    investmentLevel: "medium",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Healthcare", "Mental Health", "AI", "Mobile Apps"]
+  },
+  {
+    id: "72",
+    title: "Sustainable Tourism Agency",
+    description: "Create a tourism agency in Bali, Indonesia specializing in eco-friendly, low-impact travel experiences.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["Tourism", "Travel", "Sustainability", "Hospitality"]
+  },
+  {
+    id: "73",
+    title: "Local Bike Repair Shop",
+    description: "Open a bicycle repair and maintenance shop in Copenhagen, Denmark with a focus on personal service and sustainability.",
+    investmentLevel: "low",
+    difficulty: "intermediate",
+    timeCommitment: "medium",
+    potentialReturn: "medium",
+    tags: ["Repair", "Bicycles", "Service", "Transportation"]
+  },
+  {
+    id: "74",
+    title: "Online Platform for Skill-Sharing",
+    description: "Build a global platform where people can exchange skills and knowledge through teaching and learning.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["Education", "Skills", "Community", "Technology"]
+  },
+  {
+    id: "75",
+    title: "Urban Beekeeping Business",
+    description: "Start an urban beekeeping operation in Melbourne, Australia producing honey and providing pollination services.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "medium",
+    potentialReturn: "medium",
+    tags: ["Agriculture", "Beekeeping", "Sustainability", "Food"]
+  },
+  {
+    id: "76",
+    title: "AI-Powered Inventory Management for Retail",
+    description: "Develop AI solutions to help retail businesses globally optimize inventory, reduce waste, and increase efficiency.",
+    investmentLevel: "medium",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Retail", "AI", "Inventory", "Business Services"]
+  },
+  {
+    id: "77",
+    title: "Community Solar Farm",
+    description: "Establish a community-owned solar farm in rural Spain providing clean energy and economic benefits to local residents.",
+    investmentLevel: "high",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["Energy", "Solar", "Community", "Sustainability"]
+  },
+  {
+    id: "78",
+    title: "Local Tailoring Business with Online Orders",
+    description: "Create a tailoring business in Delhi, India that takes measurements and orders online but provides personalized service.",
+    investmentLevel: "low",
+    difficulty: "intermediate",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["Fashion", "Tailoring", "Service", "E-commerce"]
+  },
+  {
+    id: "79",
+    title: "Sustainable Pet Care Products",
+    description: "Develop and sell eco-friendly pet care products in San Francisco, USA with a focus on sustainability and animal welfare.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["Pet Care", "Sustainability", "Products", "Retail"]
+  },
+  {
+    id: "80",
+    title: "AI-Driven Tutoring Platform",
+    description: "Create a global online platform using AI to provide personalized tutoring across various subjects and skill levels.",
+    investmentLevel: "medium",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Education", "AI", "Tutoring", "Technology"]
   }
 ];
 
