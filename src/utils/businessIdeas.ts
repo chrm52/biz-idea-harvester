@@ -1,4 +1,3 @@
-
 import { BusinessIdea } from '@/components/ResultCard';
 
 interface UserFormData {
@@ -173,6 +172,156 @@ const businessIdeasDatabase: BusinessIdea[] = [
     timeCommitment: "medium",
     potentialReturn: "medium",
     tags: ["Management", "Technology", "Planning"]
+  },
+  {
+    id: "16",
+    title: "Online Language Tutoring",
+    description: "Provide personalized language tutoring services via video calls. Offer specialized courses for different proficiency levels and professional contexts.",
+    investmentLevel: "low",
+    difficulty: "intermediate",
+    timeCommitment: "medium",
+    potentialReturn: "medium",
+    tags: ["Education", "Languages", "Teaching"]
+  },
+  {
+    id: "17",
+    title: "Sustainable Home Products",
+    description: "Create or curate eco-friendly home products that help reduce waste and environmental impact, such as reusable alternatives to single-use items.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["Environment", "Retail", "Design"]
+  },
+  {
+    id: "18",
+    title: "Tech Repair Service",
+    description: "Offer repair services for smartphones, computers, and other electronics. Specialize in either quick fixes or more complex repairs that others avoid.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "medium",
+    potentialReturn: "medium",
+    tags: ["Technology", "Repair", "Service"]
+  },
+  {
+    id: "19",
+    title: "Podcast Production Agency",
+    description: "Help businesses and individuals create professional-quality podcasts by offering recording, editing, publishing, and promotion services.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "medium",
+    potentialReturn: "medium",
+    tags: ["Audio", "Marketing", "Technology"]
+  },
+  {
+    id: "20",
+    title: "Digital Product Design",
+    description: "Create and sell digital products like templates, design assets, online courses, or specialized software tools that solve specific problems.",
+    investmentLevel: "low",
+    difficulty: "intermediate",
+    timeCommitment: "medium",
+    potentialReturn: "high",
+    tags: ["Design", "Technology", "Digital Products"]
+  },
+  {
+    id: "21",
+    title: "Virtual Interior Design",
+    description: "Provide interior design services remotely, using video calls and digital renderings to help clients redesign their spaces without in-person visits.",
+    investmentLevel: "low",
+    difficulty: "intermediate",
+    timeCommitment: "medium",
+    potentialReturn: "medium",
+    tags: ["Design", "Home", "Technology"]
+  },
+  {
+    id: "22",
+    title: "Specialty Coffee Subscription",
+    description: "Curate and deliver specialty coffee beans from around the world, providing subscribers with unique and hard-to-find varieties each month.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["Food", "Subscription", "Curation"]
+  },
+  {
+    id: "23",
+    title: "Personal Shopping Service",
+    description: "Offer personalized shopping services for busy professionals, helping them find clothing, gifts, or specialty items that match their preferences.",
+    investmentLevel: "low",
+    difficulty: "beginner",
+    timeCommitment: "medium",
+    potentialReturn: "medium",
+    tags: ["Fashion", "Service", "Curation"]
+  },
+  {
+    id: "24",
+    title: "Urban Farming Consultant",
+    description: "Help urban residents and businesses set up gardens, vertical farms, or hydroponic systems to grow food in limited spaces.",
+    investmentLevel: "low",
+    difficulty: "intermediate",
+    timeCommitment: "medium",
+    potentialReturn: "medium",
+    tags: ["Agriculture", "Environment", "Consulting"]
+  },
+  {
+    id: "25",
+    title: "Data Visualization Service",
+    description: "Help businesses transform complex data into clear, compelling visualizations that convey insights and support decision-making.",
+    investmentLevel: "low",
+    difficulty: "expert",
+    timeCommitment: "medium",
+    potentialReturn: "high",
+    tags: ["Data", "Design", "Technology"]
+  },
+  {
+    id: "26",
+    title: "Children's Book Author/Illustrator",
+    description: "Create and self-publish children's books, focusing on educational content, diversity, or addressing specific childhood experiences.",
+    investmentLevel: "low",
+    difficulty: "intermediate",
+    timeCommitment: "medium",
+    potentialReturn: "medium",
+    tags: ["Writing", "Art", "Education"]
+  },
+  {
+    id: "27",
+    title: "AI Prompt Engineering Consultant",
+    description: "Help businesses optimize their use of AI tools by designing effective prompts and workflows that maximize AI capabilities.",
+    investmentLevel: "low",
+    difficulty: "expert",
+    timeCommitment: "medium",
+    potentialReturn: "high",
+    tags: ["Technology", "AI", "Consulting"]
+  },
+  {
+    id: "28",
+    title: "Vintage Furniture Restoration",
+    description: "Restore and resell vintage furniture, giving new life to quality pieces while promoting sustainability through reuse.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "medium",
+    potentialReturn: "medium",
+    tags: ["Craft", "Furniture", "Restoration"]
+  },
+  {
+    id: "29",
+    title: "Social Media Content Creator",
+    description: "Create engaging, platform-specific content for businesses looking to increase their social media presence and engagement.",
+    investmentLevel: "low",
+    difficulty: "intermediate",
+    timeCommitment: "medium",
+    potentialReturn: "medium",
+    tags: ["Social Media", "Marketing", "Creative"]
+  },
+  {
+    id: "30",
+    title: "Local Tour Guide Service",
+    description: "Develop specialized tours showcasing unique aspects of your city, such as food, history, architecture, or local hidden gems.",
+    investmentLevel: "low",
+    difficulty: "beginner",
+    timeCommitment: "medium",
+    potentialReturn: "medium",
+    tags: ["Tourism", "Local", "Experience"]
   }
 ];
 
