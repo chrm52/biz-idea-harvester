@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Lightbulb, TrendingUp, Target, DollarSign } from 'lucide-react';
+import { Lightbulb, TrendingUp, Target, DollarSign, Clock } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import AnimatedContainer from './AnimatedContainer';
 
@@ -13,6 +13,8 @@ export interface BusinessIdea {
   timeCommitment: 'low' | 'medium' | 'high';
   potentialReturn: 'low' | 'medium' | 'high';
   tags: string[];
+  // Add field for related hobbies
+  relatedHobbies?: string[];
 }
 
 interface ResultCardProps {
@@ -99,7 +101,29 @@ const ResultCard = ({ idea, index }: ResultCardProps) => {
             {idea.potentialReturn}
           </span>
         </div>
+        
+        <div className="flex items-center">
+          <Clock className="h-4 w-4 mr-2 text-muted-foreground" />
+          <span className="text-sm mr-1">Time:</span>
+          <span className="text-sm font-medium capitalize">
+            {idea.timeCommitment}
+          </span>
+        </div>
       </div>
+      
+      {/* Add related hobbies section if available */}
+      {idea.relatedHobbies && idea.relatedHobbies.length > 0 && (
+        <div className="mt-5 pt-4 border-t border-border/30">
+          <span className="text-sm text-muted-foreground mb-2 block">Related Hobbies:</span>
+          <div className="flex flex-wrap gap-2">
+            {idea.relatedHobbies.map(hobby => (
+              <span key={hobby} className="px-2 py-1 bg-primary/5 text-primary/80 text-xs rounded-full">
+                {hobby}
+              </span>
+            ))}
+          </div>
+        </div>
+      )}
     </AnimatedContainer>
   );
 };

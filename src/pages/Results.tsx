@@ -54,7 +54,7 @@ const Results = () => {
               </h1>
               
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Based on your skills, interests, and goals, here are some business ideas that might be a great fit for you.
+                Based on your skills, interests, hobbies, and goals, here are some business ideas that might be a great fit for you.
               </p>
             </div>
           </AnimatedContainer>
