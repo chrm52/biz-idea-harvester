@@ -7,6 +7,7 @@ import Footer from '@/components/Footer';
 import ResultCard, { BusinessIdea } from '@/components/ResultCard';
 import AnimatedContainer from '@/components/AnimatedContainer';
 import { generateBusinessIdeas } from '@/utils/businessIdeas';
+import { toast } from "@/components/ui/use-toast";
 
 const Results = () => {
   const [businessIdeas, setBusinessIdeas] = useState<BusinessIdea[]>([]);
@@ -31,17 +32,44 @@ const Results = () => {
       const ideas = generateBusinessIdeas(userData);
       setBusinessIdeas(ideas);
       setIsLoading(false);
+      
+      // Show a toast notification when results are ready
+      toast({
+        title: "Results Ready",
+        description: `Generated ${ideas.length} personalized business ideas based on your profile`,
+      });
     }, 1500);
     
     return () => clearTimeout(timer);
   }, [navigate]);
+
+  // Function to regenerate ideas (provides a fresh set)
+  const handleRegenerate = () => {
+    setIsLoading(true);
+    
+    const storedData = sessionStorage.getItem('userFormData');
+    if (!storedData) return;
+    
+    const userData = JSON.parse(storedData);
+    
+    setTimeout(() => {
+      const ideas = generateBusinessIdeas(userData);
+      setBusinessIdeas(ideas);
+      setIsLoading(false);
+      
+      toast({
+        title: "New Ideas Generated",
+        description: "We've created a fresh set of business ideas for you",
+      });
+    }, 1000);
+  };
 
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
       
       <main className="flex-1 pt-32 pb-16 px-4">
-        <div className="container mx-auto max-w-5xl">
+        <div className="container mx-auto max-w-6xl">
           <AnimatedContainer animation="slide-down" duration={800}>
             <div className="text-center mb-16">
               <div className="inline-flex items-center bg-primary/10 rounded-full px-4 py-1.5 text-sm font-medium text-primary mb-6">
@@ -67,14 +95,26 @@ const Results = () => {
               </p>
             </div>
           ) : (
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {businessIdeas.map((idea, index) => (
-                <ResultCard key={idea.id} idea={idea} index={index} />
-              ))}
-            </div>
+            <>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {businessIdeas.map((idea, index) => (
+                  <ResultCard key={idea.id} idea={idea} index={index} />
+                ))}
+              </div>
+              
+              <div className="text-center mt-12">
+                <button
+                  onClick={handleRegenerate}
+                  className="bg-primary text-white px-6 py-3 rounded-lg transition-colors hover:bg-primary/90 inline-flex items-center mr-4"
+                >
+                  <RefreshCw className="h-4 w-4 mr-2" />
+                  Generate More Ideas
+                </button>
+              </div>
+            </>
           )}
           
-          <div className="text-center mt-16">
+          <div className="text-center mt-8">
             <AnimatedContainer animation="fade-in" duration={800}>
               <button
                 onClick={() => navigate('/')}

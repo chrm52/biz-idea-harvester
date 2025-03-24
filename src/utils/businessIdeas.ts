@@ -17,9 +17,12 @@ interface UserFormData {
   businessModelPreference: string[];
   incomePreference: string;
   industries: string[];
+  hobbies?: string[]; // Add hobbies field
 }
 
-// Sample business ideas database
+// This is a small sample of the business ideas database
+// In a production app, this would be replaced with your 2000+ ideas dataset
+// The actual implementation would likely load this from an external JSON file or API
 const businessIdeasDatabase: BusinessIdea[] = [
   {
     id: "1",
@@ -173,6 +176,38 @@ const businessIdeasDatabase: BusinessIdea[] = [
   }
 ];
 
+// Simulate a larger dataset by adding a function to generate more ideas
+// In a real implementation, you would replace this with your actual dataset loading
+const getExtendedBusinessIdeasDatabase = (): BusinessIdea[] => {
+  // Start with our sample database
+  const extendedDatabase = [...businessIdeasDatabase];
+  
+  // Add more dynamically generated ideas to simulate a larger dataset
+  // This is just a placeholder for demonstration - you would replace this with your 2000+ ideas
+  const industries = ["Technology", "Health", "Education", "Food", "Retail", "Finance", "Entertainment", "Travel", "Sports", "Fashion", "Art", "Environment"];
+  const businessTypes = ["Service", "Product", "Subscription", "Marketplace", "Platform", "Consulting", "Agency", "Store", "Coaching"];
+  
+  // Generate additional ideas (simulating a larger dataset)
+  for (let i = 16; i <= 100; i++) {
+    const industry = industries[Math.floor(Math.random() * industries.length)];
+    const businessType = businessTypes[Math.floor(Math.random() * businessTypes.length)];
+    
+    extendedDatabase.push({
+      id: i.toString(),
+      title: `${industry} ${businessType} Business`,
+      description: `A ${businessType.toLowerCase()} business in the ${industry.toLowerCase()} industry that leverages modern trends and technology to deliver value to customers.`,
+      investmentLevel: ["low", "medium", "high"][Math.floor(Math.random() * 3)] as "low" | "medium" | "high",
+      difficulty: ["beginner", "intermediate", "expert"][Math.floor(Math.random() * 3)] as "beginner" | "intermediate" | "expert",
+      timeCommitment: ["low", "medium", "high"][Math.floor(Math.random() * 3)] as "low" | "medium" | "high",
+      potentialReturn: ["low", "medium", "high"][Math.floor(Math.random() * 3)] as "low" | "medium" | "high",
+      tags: [industry, businessType, ...industries.slice(0, 2 + Math.floor(Math.random() * 3))],
+      relatedHobbies: industries.slice(0, 2 + Math.floor(Math.random() * 3))
+    });
+  }
+  
+  return extendedDatabase;
+};
+
 // Function to calculate match score between user data and business idea
 const calculateMatchScore = (userData: UserFormData, idea: BusinessIdea): number => {
   let score = 0;
@@ -288,8 +323,11 @@ const calculateMatchScore = (userData: UserFormData, idea: BusinessIdea): number
 
 // Function to generate personalized business ideas based on user data
 export const generateBusinessIdeas = (userData: UserFormData): BusinessIdea[] => {
+  // Get extended business ideas database
+  const allBusinessIdeas = getExtendedBusinessIdeasDatabase();
+  
   // Calculate match scores for all ideas
-  const ideasWithScores = businessIdeasDatabase.map(idea => ({
+  const ideasWithScores = allBusinessIdeas.map(idea => ({
     idea,
     score: calculateMatchScore(userData, idea)
   }));
@@ -297,6 +335,30 @@ export const generateBusinessIdeas = (userData: UserFormData): BusinessIdea[] =>
   // Sort by match score (descending)
   ideasWithScores.sort((a, b) => b.score - a.score);
   
-  // Return top 6 ideas (or all if less than 6)
-  return ideasWithScores.slice(0, 6).map(item => item.idea);
+  // Return top 8 ideas (increased from 6)
+  return ideasWithScores.slice(0, 8).map(item => {
+    // Add related hobbies to the business idea if the user has hobbies
+    if (userData.hobbies && userData.hobbies.length > 0) {
+      // Find intersection between user hobbies and idea tags
+      const relatedHobbies = userData.hobbies.filter(hobby => 
+        idea.tags.some(tag => tag.toLowerCase().includes(hobby.toLowerCase()))
+      );
+      
+      // Add up to 3 random hobbies if no direct matches
+      if (relatedHobbies.length === 0 && userData.hobbies.length > 0) {
+        const randomHobbies = [...userData.hobbies].sort(() => 0.5 - Math.random()).slice(0, 3);
+        return {
+          ...item.idea,
+          relatedHobbies: randomHobbies
+        };
+      }
+      
+      return {
+        ...item.idea,
+        relatedHobbies: relatedHobbies.length > 0 ? relatedHobbies : undefined
+      };
+    }
+    
+    return item.idea;
+  });
 };
