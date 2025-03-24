@@ -341,7 +341,7 @@ export const generateBusinessIdeas = (userData: UserFormData): BusinessIdea[] =>
     if (userData.hobbies && userData.hobbies.length > 0) {
       // Find intersection between user hobbies and idea tags
       const relatedHobbies = userData.hobbies.filter(hobby => 
-        idea.tags.some(tag => tag.toLowerCase().includes(hobby.toLowerCase()))
+        item.idea.tags.some(tag => tag.toLowerCase().includes(hobby.toLowerCase()))
       );
       
       // Add up to 3 random hobbies if no direct matches
