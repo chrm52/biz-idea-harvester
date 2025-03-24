@@ -8,6 +8,15 @@ interface UserFormData {
   investmentLevel: string;
   location: string;
   goals: string[];
+  // New fields
+  educationBackground: string;
+  timeCommitment: string;
+  targetMarket: string;
+  riskTolerance: string;
+  techComfort: string;
+  businessModelPreference: string[];
+  incomePreference: string;
+  industries: string[];
 }
 
 // Sample business ideas database
@@ -178,7 +187,14 @@ const calculateMatchScore = (userData: UserFormData, idea: BusinessIdea): number
   // Match interests
   userData.interests.forEach(interest => {
     if (idea.tags.includes(interest)) {
-      score += 8;
+      score += 5;
+    }
+  });
+
+  // Match industries
+  userData.industries.forEach(industry => {
+    if (idea.tags.includes(industry)) {
+      score += 15;
     }
   });
   
@@ -204,6 +220,53 @@ const calculateMatchScore = (userData: UserFormData, idea: BusinessIdea): number
     (userData.investmentLevel === 'low' && idea.investmentLevel === 'low')
   ) {
     score += 7;
+  }
+  
+  // Match time commitment
+  if (
+    (userData.timeCommitment === 'full-time' && idea.timeCommitment === 'high') ||
+    (userData.timeCommitment === 'part-time' && idea.timeCommitment === 'medium') ||
+    (userData.timeCommitment === 'minimal' && idea.timeCommitment === 'low')
+  ) {
+    score += 12;
+  }
+  
+  // Match risk tolerance
+  if (
+    (userData.riskTolerance === 'high' && idea.potentialReturn === 'high') ||
+    (userData.riskTolerance === 'medium' && idea.potentialReturn === 'medium') ||
+    (userData.riskTolerance === 'low' && idea.potentialReturn === 'low')
+  ) {
+    score += 10;
+  }
+  
+  // Match business model preference if applicable
+  if (userData.businessModelPreference.length > 0) {
+    const modelMatchScore = userData.businessModelPreference.some(model => {
+      const modelLower = model.toLowerCase();
+      const descriptionLower = idea.description.toLowerCase();
+      return descriptionLower.includes(modelLower);
+    }) ? 10 : 0;
+    
+    score += modelMatchScore;
+  }
+  
+  // Match target market
+  if (
+    (userData.targetMarket === 'local' && idea.description.toLowerCase().includes('local')) ||
+    (userData.targetMarket === 'national' && !idea.description.toLowerCase().includes('global')) ||
+    (userData.targetMarket === 'global' && idea.description.toLowerCase().includes('online'))
+  ) {
+    score += 8;
+  }
+  
+  // Match income preference
+  if (
+    (userData.incomePreference === 'quick-cash' && idea.timeCommitment === 'low') ||
+    (userData.incomePreference === 'steady' && idea.timeCommitment === 'medium') ||
+    (userData.incomePreference === 'long-term-growth' && idea.timeCommitment === 'high' && idea.potentialReturn === 'high')
+  ) {
+    score += 12;
   }
   
   // Match goals (if applicable)
