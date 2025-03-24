@@ -356,7 +356,7 @@ const businessIdeasDatabase: BusinessIdea[] = [
   {
     id: "34",
     title: "Sustainable Fashion Marketplace",
-    description: "Create an online marketplace for selling organic and sustainable clothing. Focus on the Spanish market with global potential.",
+    description: "Create an online marketplace for selling organic and sustainable clothing with global shipping capabilities.",
     investmentLevel: "medium",
     difficulty: "intermediate",
     timeCommitment: "high",
@@ -385,8 +385,8 @@ const businessIdeasDatabase: BusinessIdea[] = [
   },
   {
     id: "37",
-    title: "Online Local Compute Cluster Service",
-    description: "Provide access to local compute clusters for communities needing computing power. US-focused with community benefits.",
+    title: "Local Compute Cluster Service",
+    description: "Provide access to compute clusters for communities needing computing power. Focus on serving local needs with global technology.",
     investmentLevel: "high",
     difficulty: "expert",
     timeCommitment: "medium",
@@ -416,7 +416,7 @@ const businessIdeasDatabase: BusinessIdea[] = [
   {
     id: "40",
     title: "Online Renewable Energy Consulting",
-    description: "Provide consulting services for businesses looking to adopt renewable energy solutions, with a focus on the Spanish market.",
+    description: "Provide consulting services for businesses looking to adopt renewable energy solutions regardless of location.",
     investmentLevel: "low",
     difficulty: "intermediate",
     timeCommitment: "medium",
@@ -426,7 +426,7 @@ const businessIdeasDatabase: BusinessIdea[] = [
   {
     id: "41",
     title: "Hyperlocal Food Co-op",
-    description: "Establish a community-based food cooperative to grow organic food for local residents in Seattle, USA.",
+    description: "Establish a community-based food cooperative to grow organic food for local residents in your area.",
     investmentLevel: "medium",
     difficulty: "intermediate",
     timeCommitment: "high",
@@ -436,7 +436,7 @@ const businessIdeasDatabase: BusinessIdea[] = [
   {
     id: "42",
     title: "Solar Installation Business",
-    description: "Start a business installing solar panels for homes and businesses in Madrid, Spain, capitalizing on renewable energy trends.",
+    description: "Start a business installing solar panels for homes and businesses, capitalizing on renewable energy trends.",
     investmentLevel: "medium",
     difficulty: "intermediate",
     timeCommitment: "high",
@@ -446,7 +446,7 @@ const businessIdeasDatabase: BusinessIdea[] = [
   {
     id: "43",
     title: "Skilled Physical Labor Training Center",
-    description: "Create a training center in Chicago, USA to teach workers valuable physical labor skills for the changing job market.",
+    description: "Create a training center to teach workers valuable physical labor skills for the changing job market.",
     investmentLevel: "medium",
     difficulty: "intermediate",
     timeCommitment: "high",
@@ -456,7 +456,7 @@ const businessIdeasDatabase: BusinessIdea[] = [
   {
     id: "44",
     title: "Organic Farming Business",
-    description: "Establish an organic farming operation in Barcelona, Spain to grow and sell sustainable produce locally.",
+    description: "Establish an organic farming operation to grow and sell sustainable produce locally.",
     investmentLevel: "high",
     difficulty: "intermediate",
     timeCommitment: "high",
@@ -466,7 +466,7 @@ const businessIdeasDatabase: BusinessIdea[] = [
   {
     id: "45",
     title: "Local Energy Storage Solutions",
-    description: "Provide battery storage solutions in Austin, USA to help communities achieve energy independence.",
+    description: "Provide battery storage solutions to help communities achieve energy independence.",
     investmentLevel: "high",
     difficulty: "expert",
     timeCommitment: "high",
@@ -476,7 +476,7 @@ const businessIdeasDatabase: BusinessIdea[] = [
   {
     id: "46",
     title: "Biotech Research Lab",
-    description: "Establish a research laboratory in Valencia, Spain focused on biotechnology solutions for sustainable development.",
+    description: "Establish a research laboratory focused on biotechnology solutions for sustainable development.",
     investmentLevel: "high",
     difficulty: "expert",
     timeCommitment: "high",
@@ -486,7 +486,7 @@ const businessIdeasDatabase: BusinessIdea[] = [
   {
     id: "47",
     title: "Community-Run Makerspace",
-    description: "Create a shared workshop in Portland, USA where locals can create, repair, and repurpose goods.",
+    description: "Create a shared workshop where locals can create, repair, and repurpose goods.",
     investmentLevel: "medium",
     difficulty: "intermediate",
     timeCommitment: "high",
@@ -496,7 +496,7 @@ const businessIdeasDatabase: BusinessIdea[] = [
   {
     id: "48",
     title: "Sustainable Construction Firm",
-    description: "Start a construction company in Miami, USA specializing in building eco-friendly, sustainable homes and buildings.",
+    description: "Start a construction company specializing in building eco-friendly, sustainable homes and buildings.",
     investmentLevel: "high",
     difficulty: "expert",
     timeCommitment: "high",
@@ -505,8 +505,8 @@ const businessIdeasDatabase: BusinessIdea[] = [
   },
   {
     id: "49",
-    title: "Local Food Truck with Organic Menu",
-    description: "Launch a food truck in London, UK offering organic, locally-sourced meals with a focus on personal connection.",
+    title: "Food Truck with Organic Menu",
+    description: "Launch a food truck offering organic, locally-sourced meals with a focus on personal connection.",
     investmentLevel: "medium",
     difficulty: "intermediate",
     timeCommitment: "high",
@@ -516,7 +516,7 @@ const businessIdeasDatabase: BusinessIdea[] = [
   {
     id: "50",
     title: "Elder Care Facility with Human Touch",
-    description: "Create a care facility in Tokyo, Japan that emphasizes human connection and personalized care for the elderly.",
+    description: "Create a care facility that emphasizes human connection and personalized care for the elderly.",
     investmentLevel: "high",
     difficulty: "expert",
     timeCommitment: "high",
@@ -526,7 +526,7 @@ const businessIdeasDatabase: BusinessIdea[] = [
   {
     id: "51",
     title: "AI-Assisted Urban Farming Consultancy",
-    description: "Combine AI technology with urban farming expertise to offer online advice and on-site setup in New York, USA.",
+    description: "Combine AI technology with urban farming expertise to offer online advice and on-site setup services.",
     investmentLevel: "medium",
     difficulty: "expert",
     timeCommitment: "high",
@@ -536,7 +536,7 @@ const businessIdeasDatabase: BusinessIdea[] = [
   {
     id: "52",
     title: "E-commerce with Local Pickup for Sustainable Goods",
-    description: "Create an online store for sustainable products in Berlin, Germany with convenient local pickup options.",
+    description: "Create an online store for sustainable products with convenient local pickup options.",
     investmentLevel: "medium",
     difficulty: "intermediate",
     timeCommitment: "high",
@@ -546,7 +546,7 @@ const businessIdeasDatabase: BusinessIdea[] = [
   {
     id: "53",
     title: "Hybrid Renewable Energy Training Program",
-    description: "Offer a combination of online courses and in-person workshops in Sydney, Australia teaching renewable energy skills.",
+    description: "Offer a combination of online courses and in-person workshops teaching renewable energy skills.",
     investmentLevel: "medium",
     difficulty: "intermediate",
     timeCommitment: "high",
@@ -555,8 +555,8 @@ const businessIdeasDatabase: BusinessIdea[] = [
   },
   {
     id: "54",
-    title: "AI-Powered Local Event Planning",
-    description: "Use AI to plan events online and execute them offline in Paris, France, combining technology with personal touch.",
+    title: "AI-Powered Event Planning",
+    description: "Use AI to plan events online and execute them offline, combining technology with personal touch.",
     investmentLevel: "medium",
     difficulty: "intermediate",
     timeCommitment: "high",
@@ -566,7 +566,7 @@ const businessIdeasDatabase: BusinessIdea[] = [
   {
     id: "55",
     title: "Online-to-Offline Repair Service",
-    description: "Create an app in Toronto, Canada that connects people with local repair services for various items.",
+    description: "Create an app that connects people with local repair services for various items.",
     investmentLevel: "medium",
     difficulty: "intermediate",
     timeCommitment: "medium",
@@ -576,7 +576,7 @@ const businessIdeasDatabase: BusinessIdea[] = [
   {
     id: "56",
     title: "Hybrid Fitness Studio with AI Coaching",
-    description: "Combine in-person fitness classes in Los Angeles, USA with AI-driven online coaching for comprehensive wellness.",
+    description: "Combine in-person fitness classes with AI-driven online coaching for comprehensive wellness.",
     investmentLevel: "medium",
     difficulty: "intermediate",
     timeCommitment: "high",
@@ -586,7 +586,7 @@ const businessIdeasDatabase: BusinessIdea[] = [
   {
     id: "57",
     title: "Local Compute Cluster with Online Training",
-    description: "Establish compute clusters in Cape Town, South Africa with complementary online training for community use.",
+    description: "Establish compute clusters with complementary online training for community use.",
     investmentLevel: "high",
     difficulty: "expert",
     timeCommitment: "high",
@@ -596,7 +596,7 @@ const businessIdeasDatabase: BusinessIdea[] = [
   {
     id: "58",
     title: "Sustainable Catering with Online Ordering",
-    description: "Launch a sustainable catering service in Stockholm, Sweden that takes orders online for convenient, eco-friendly food service.",
+    description: "Launch a sustainable catering service that takes orders online for convenient, eco-friendly food service.",
     investmentLevel: "medium",
     difficulty: "intermediate",
     timeCommitment: "high",
@@ -605,8 +605,8 @@ const businessIdeasDatabase: BusinessIdea[] = [
   },
   {
     id: "59",
-    title: "AI-Enhanced Local Art Gallery",
-    description: "Create an art gallery in Seoul, South Korea that uses AI for online curation while offering offline exhibitions.",
+    title: "AI-Enhanced Art Gallery",
+    description: "Create an art gallery that uses AI for online curation while offering offline exhibitions.",
     investmentLevel: "medium",
     difficulty: "intermediate",
     timeCommitment: "medium",
@@ -616,7 +616,7 @@ const businessIdeasDatabase: BusinessIdea[] = [
   {
     id: "60",
     title: "Hybrid Childcare with AI Monitoring",
-    description: "Offer in-person childcare in Singapore with AI monitoring technology that keeps parents connected.",
+    description: "Offer in-person childcare with AI monitoring technology that keeps parents connected.",
     investmentLevel: "medium",
     difficulty: "expert",
     timeCommitment: "high",
@@ -636,7 +636,7 @@ const businessIdeasDatabase: BusinessIdea[] = [
   {
     id: "62",
     title: "Off-Grid Solar Solutions Provider",
-    description: "Develop and install off-grid solar power systems in Nairobi, Kenya and surrounding areas to provide reliable energy.",
+    description: "Develop and install off-grid solar power systems to provide reliable energy in areas with unreliable power.",
     investmentLevel: "high",
     difficulty: "intermediate",
     timeCommitment: "high",
@@ -646,7 +646,7 @@ const businessIdeasDatabase: BusinessIdea[] = [
   {
     id: "63",
     title: "Online Platform for Local Artisans",
-    description: "Create a marketplace connecting local artisans in Mumbai, India with global customers while preserving traditional crafts.",
+    description: "Create a marketplace connecting local artisans with global customers while preserving traditional crafts.",
     investmentLevel: "medium",
     difficulty: "intermediate",
     timeCommitment: "high",
@@ -656,7 +656,7 @@ const businessIdeasDatabase: BusinessIdea[] = [
   {
     id: "64",
     title: "Sustainable Packaging Manufacturer",
-    description: "Produce eco-friendly packaging alternatives in Amsterdam, Netherlands to help businesses reduce environmental impact.",
+    description: "Produce eco-friendly packaging alternatives to help businesses reduce environmental impact.",
     investmentLevel: "high",
     difficulty: "expert",
     timeCommitment: "high",
@@ -665,8 +665,8 @@ const businessIdeasDatabase: BusinessIdea[] = [
   },
   {
     id: "65",
-    title: "Local Water Purification Business",
-    description: "Provide affordable water purification solutions in Lagos, Nigeria to address local water quality challenges.",
+    title: "Water Purification Business",
+    description: "Provide affordable water purification solutions to address water quality challenges in underserved areas.",
     investmentLevel: "medium",
     difficulty: "intermediate",
     timeCommitment: "high",
@@ -686,7 +686,7 @@ const businessIdeasDatabase: BusinessIdea[] = [
   {
     id: "67",
     title: "Community-Owned Internet Service",
-    description: "Establish community-owned internet infrastructure in rural USA to provide affordable, reliable connectivity.",
+    description: "Establish community-owned internet infrastructure in rural areas to provide affordable, reliable connectivity.",
     investmentLevel: "high",
     difficulty: "expert",
     timeCommitment: "high",
@@ -696,7 +696,7 @@ const businessIdeasDatabase: BusinessIdea[] = [
   {
     id: "68",
     title: "Eco-Friendly Laundry Service",
-    description: "Start a laundry service in Dubai, UAE using water-saving technologies and eco-friendly detergents.",
+    description: "Start a laundry service using water-saving technologies and eco-friendly detergents.",
     investmentLevel: "medium",
     difficulty: "intermediate",
     timeCommitment: "high",
@@ -716,7 +716,7 @@ const businessIdeasDatabase: BusinessIdea[] = [
   {
     id: "70",
     title: "Local Waste Recycling Plant",
-    description: "Establish a recycling facility in Sao Paulo, Brazil focusing on plastic waste and other recoverable materials.",
+    description: "Establish a recycling facility focusing on plastic waste and other recoverable materials.",
     investmentLevel: "high",
     difficulty: "expert",
     timeCommitment: "high",
@@ -736,7 +736,7 @@ const businessIdeasDatabase: BusinessIdea[] = [
   {
     id: "72",
     title: "Sustainable Tourism Agency",
-    description: "Create a tourism agency in Bali, Indonesia specializing in eco-friendly, low-impact travel experiences.",
+    description: "Create a tourism agency specializing in eco-friendly, low-impact travel experiences.",
     investmentLevel: "medium",
     difficulty: "intermediate",
     timeCommitment: "high",
@@ -745,8 +745,8 @@ const businessIdeasDatabase: BusinessIdea[] = [
   },
   {
     id: "73",
-    title: "Local Bike Repair Shop",
-    description: "Open a bicycle repair and maintenance shop in Copenhagen, Denmark with a focus on personal service and sustainability.",
+    title: "Bike Repair Shop",
+    description: "Open a bicycle repair and maintenance shop with a focus on personal service and sustainability.",
     investmentLevel: "low",
     difficulty: "intermediate",
     timeCommitment: "medium",
@@ -766,7 +766,7 @@ const businessIdeasDatabase: BusinessIdea[] = [
   {
     id: "75",
     title: "Urban Beekeeping Business",
-    description: "Start an urban beekeeping operation in Melbourne, Australia producing honey and providing pollination services.",
+    description: "Start an urban beekeeping operation producing honey and providing pollination services.",
     investmentLevel: "medium",
     difficulty: "intermediate",
     timeCommitment: "medium",
@@ -786,7 +786,7 @@ const businessIdeasDatabase: BusinessIdea[] = [
   {
     id: "77",
     title: "Community Solar Farm",
-    description: "Establish a community-owned solar farm in rural Spain providing clean energy and economic benefits to local residents.",
+    description: "Establish a community-owned solar farm providing clean energy and economic benefits to local residents.",
     investmentLevel: "high",
     difficulty: "expert",
     timeCommitment: "high",
@@ -795,8 +795,8 @@ const businessIdeasDatabase: BusinessIdea[] = [
   },
   {
     id: "78",
-    title: "Local Tailoring Business with Online Orders",
-    description: "Create a tailoring business in Delhi, India that takes measurements and orders online but provides personalized service.",
+    title: "Tailoring Business with Online Orders",
+    description: "Create a tailoring business that takes measurements and orders online but provides personalized service.",
     investmentLevel: "low",
     difficulty: "intermediate",
     timeCommitment: "high",
@@ -806,7 +806,7 @@ const businessIdeasDatabase: BusinessIdea[] = [
   {
     id: "79",
     title: "Sustainable Pet Care Products",
-    description: "Develop and sell eco-friendly pet care products in San Francisco, USA with a focus on sustainability and animal welfare.",
+    description: "Develop and sell eco-friendly pet care products with a focus on sustainability and animal welfare.",
     investmentLevel: "medium",
     difficulty: "intermediate",
     timeCommitment: "high",
