@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import UserForm from '@/components/UserForm';
 import AnimatedContainer from '@/components/AnimatedContainer';
+import BusinessIdeasCounter from '@/components/BusinessIdeasCounter';
 
 const Index = () => {
   return (
@@ -39,6 +40,11 @@ const Index = () => {
                 <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8">
                   Answer a few questions and we'll suggest business ideas tailored to your skills, interests, and goals. Start your entrepreneurial journey today.
                 </p>
+              </AnimatedContainer>
+              
+              {/* Business Ideas Counter */}
+              <AnimatedContainer animation="fade-in" delay={750} duration={1000}>
+                <BusinessIdeasCounter />
               </AnimatedContainer>
               
               <AnimatedContainer animation="fade-in" delay={900} duration={1000}>

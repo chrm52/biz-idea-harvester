@@ -4201,6 +4201,206 @@ export const expandedBusinessIdeas: BusinessIdea[] = [
     timeCommitment: "high",
     potentialReturn: "high",
     tags: ["Creative", "Rights Management", "Legal", "Technology"]
+  },
+  {
+    id: "421",
+    title: "AI Personal Style Assistant",
+    description: "Uses AI to provide personalized fashion and styling recommendations.",
+    investmentLevel: "medium",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Lifestyle", "AI", "Fashion", "Personal Service"]
+  },
+  {
+    id: "422",
+    title: "Digital Wellness Coach Platform",
+    description: "Provides personalized wellness plans and coaching through AI and human experts.",
+    investmentLevel: "medium",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Lifestyle", "Wellness", "Coaching", "Technology"]
+  },
+  {
+    id: "423",
+    title: "Smart Home Organization Service",
+    description: "Combines professional organizing with smart home technology integration.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "medium",
+    potentialReturn: "medium",
+    tags: ["Lifestyle", "Organization", "Smart Home", "Service"]
+  },
+  {
+    id: "424",
+    title: "Virtual Personal Assistant Service",
+    description: "Provides AI-enhanced virtual assistance for daily tasks and scheduling.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["Lifestyle", "Virtual Assistant", "AI", "Service"]
+  },
+  {
+    id: "425",
+    title: "Digital Life Coach Platform",
+    description: "Offers personalized life coaching through video calls and AI insights.",
+    investmentLevel: "medium",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Lifestyle", "Coaching", "Personal Development", "Technology"]
+  },
+  {
+    id: "426",
+    title: "Smart Wardrobe Management System",
+    description: "Helps organize and optimize personal wardrobes with AI and IoT technology.",
+    investmentLevel: "medium",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["Lifestyle", "Fashion", "IoT", "Organization"]
+  },
+  {
+    id: "427",
+    title: "Personal Event Planning Platform",
+    description: "Streamlines event planning with AI-powered recommendations and vendor matching.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["Lifestyle", "Events", "Planning", "Service"]
+  },
+  {
+    id: "428",
+    title: "Digital Memory Preservation Service",
+    description: "Digitizes and organizes personal memories and memorabilia.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "medium",
+    potentialReturn: "medium",
+    tags: ["Lifestyle", "Memory", "Digital", "Service"]
+  },
+  {
+    id: "429",
+    title: "Personalized Gift Curation Service",
+    description: "Uses AI to recommend and source perfect gifts based on recipient profiles.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "medium",
+    potentialReturn: "medium",
+    tags: ["Lifestyle", "Gifts", "AI", "Service"]
+  },
+  {
+    id: "430",
+    title: "Smart Home Automation Consultant",
+    description: "Designs and implements personalized smart home solutions.",
+    investmentLevel: "medium",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Lifestyle", "Smart Home", "Consulting", "Technology"]
+  },
+  {
+    id: "431",
+    title: "Digital Decluttering Service",
+    description: "Helps organize digital life, from emails to cloud storage.",
+    investmentLevel: "low",
+    difficulty: "intermediate",
+    timeCommitment: "medium",
+    potentialReturn: "medium",
+    tags: ["Lifestyle", "Organization", "Digital", "Service"]
+  },
+  {
+    id: "432",
+    title: "Personal Brand Development Platform",
+    description: "Helps individuals build and manage their personal brand online.",
+    investmentLevel: "medium",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Lifestyle", "Branding", "Digital", "Personal Development"]
+  },
+  {
+    id: "433",
+    title: "Luxury Lifestyle Concierge Service",
+    description: "Provides premium concierge services with AI-powered recommendations.",
+    investmentLevel: "high",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Lifestyle", "Luxury", "Concierge", "Service"]
+  },
+  {
+    id: "434",
+    title: "Personal Time Management Platform",
+    description: "Helps optimize daily schedules and routines using AI analytics.",
+    investmentLevel: "medium",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["Lifestyle", "Productivity", "AI", "Management"]
+  },
+  {
+    id: "435",
+    title: "Digital Estate Planning Service",
+    description: "Helps plan and manage digital assets and online presence after death.",
+    investmentLevel: "medium",
+    difficulty: "expert",
+    timeCommitment: "medium",
+    potentialReturn: "medium",
+    tags: ["Lifestyle", "Estate Planning", "Digital", "Legal"]
+  },
+  {
+    id: "436",
+    title: "Personal Safety Tech Platform",
+    description: "Provides personal safety solutions using IoT and mobile technology.",
+    investmentLevel: "medium",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Lifestyle", "Safety", "IoT", "Technology"]
+  },
+  {
+    id: "437",
+    title: "Digital Family Management Platform",
+    description: "Helps coordinate family schedules, tasks, and communications.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["Lifestyle", "Family", "Management", "Technology"]
+  },
+  {
+    id: "438",
+    title: "Personal Finance Optimization Service",
+    description: "Provides AI-driven personal finance management and optimization.",
+    investmentLevel: "medium",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Lifestyle", "Finance", "AI", "Service"]
+  },
+  {
+    id: "439",
+    title: "Sustainable Lifestyle Consultant",
+    description: "Helps individuals transition to more sustainable living practices.",
+    investmentLevel: "low",
+    difficulty: "intermediate",
+    timeCommitment: "medium",
+    potentialReturn: "medium",
+    tags: ["Lifestyle", "Sustainability", "Consulting", "Environment"]
+  },
+  {
+    id: "440",
+    title: "Digital Identity Management Service",
+    description: "Manages and protects personal online identity and privacy.",
+    investmentLevel: "medium",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Lifestyle", "Privacy", "Digital", "Security"]
   }
 ];
 
