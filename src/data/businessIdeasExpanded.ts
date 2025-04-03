@@ -4001,6 +4001,206 @@ export const expandedBusinessIdeas: BusinessIdea[] = [
     timeCommitment: "high",
     potentialReturn: "high",
     tags: ["Healthcare", "Waste Management", "Sustainability", "Service"]
+  },
+  {
+    id: "401",
+    title: "Digital Art Marketplace Platform",
+    description: "Platform for artists to sell digital art with NFT verification.",
+    investmentLevel: "medium",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Creative", "Digital Art", "NFT", "Marketplace"]
+  },
+  {
+    id: "402",
+    title: "3D Animation Studio",
+    description: "Creates 3D animations for entertainment and commercial use.",
+    investmentLevel: "high",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Creative", "Animation", "3D", "Entertainment"]
+  },
+  {
+    id: "403",
+    title: "Creative Asset Management Platform",
+    description: "Digital asset management system for creative professionals.",
+    investmentLevel: "medium",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Creative", "Asset Management", "Digital", "Technology"]
+  },
+  {
+    id: "404",
+    title: "Virtual Art Gallery Platform",
+    description: "Hosts virtual art exhibitions and galleries in immersive environments.",
+    investmentLevel: "medium",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Creative", "Virtual", "Art", "Gallery"]
+  },
+  {
+    id: "405",
+    title: "Creative Collaboration Platform",
+    description: "Enables remote collaboration for creative professionals.",
+    investmentLevel: "medium",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Creative", "Collaboration", "Platform", "Technology"]
+  },
+  {
+    id: "406",
+    title: "Digital Design Marketplace",
+    description: "Platform for buying and selling digital design assets.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Creative", "Design", "Marketplace", "Digital"]
+  },
+  {
+    id: "407",
+    title: "AR Art Experience Platform",
+    description: "Creates augmented reality art experiences and installations.",
+    investmentLevel: "high",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Creative", "AR", "Art", "Technology"]
+  },
+  {
+    id: "408",
+    title: "Creative Project Management Tool",
+    description: "Specialized project management software for creative teams.",
+    investmentLevel: "medium",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Creative", "Project Management", "Software", "Technology"]
+  },
+  {
+    id: "409",
+    title: "Digital Music Production Platform",
+    description: "Cloud-based music production and collaboration tools.",
+    investmentLevel: "medium",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Creative", "Music", "Production", "Technology"]
+  },
+  {
+    id: "410",
+    title: "Creative Learning Platform",
+    description: "Online courses and tutorials for creative skills.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["Creative", "Education", "Learning", "Platform"]
+  },
+  {
+    id: "411",
+    title: "Motion Graphics Studio",
+    description: "Creates motion graphics for digital media and advertising.",
+    investmentLevel: "medium",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Creative", "Motion Graphics", "Animation", "Design"]
+  },
+  {
+    id: "412",
+    title: "Creative Portfolio Platform",
+    description: "Platform for creatives to showcase and manage their portfolios.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["Creative", "Portfolio", "Platform", "Technology"]
+  },
+  {
+    id: "413",
+    title: "Digital Comics Platform",
+    description: "Platform for creating and publishing digital comics.",
+    investmentLevel: "medium",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Creative", "Comics", "Digital", "Publishing"]
+  },
+  {
+    id: "414",
+    title: "Creative Freelance Platform",
+    description: "Specialized marketplace for creative freelancers.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Creative", "Freelance", "Marketplace", "Platform"]
+  },
+  {
+    id: "415",
+    title: "Digital Art Authentication Service",
+    description: "Verifies and authenticates digital artwork using blockchain.",
+    investmentLevel: "medium",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Creative", "Authentication", "Blockchain", "Art"]
+  },
+  {
+    id: "416",
+    title: "Creative Resource Marketplace",
+    description: "Marketplace for creative tools, templates, and resources.",
+    investmentLevel: "medium",
+    difficulty: "intermediate",
+    timeCommitment: "high",
+    potentialReturn: "medium",
+    tags: ["Creative", "Resources", "Marketplace", "Digital"]
+  },
+  {
+    id: "417",
+    title: "Virtual Photography Studio",
+    description: "Platform for creating and editing virtual photography.",
+    investmentLevel: "medium",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Creative", "Photography", "Virtual", "Technology"]
+  },
+  {
+    id: "418",
+    title: "Creative Analytics Platform",
+    description: "Analytics and insights platform for creative industries.",
+    investmentLevel: "medium",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Creative", "Analytics", "Data", "Technology"]
+  },
+  {
+    id: "419",
+    title: "Digital Fashion Design Platform",
+    description: "Platform for creating and showcasing digital fashion designs.",
+    investmentLevel: "medium",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Creative", "Fashion", "Digital", "Design"]
+  },
+  {
+    id: "420",
+    title: "Creative Rights Management Platform",
+    description: "Manages and protects creative intellectual property rights.",
+    investmentLevel: "medium",
+    difficulty: "expert",
+    timeCommitment: "high",
+    potentialReturn: "high",
+    tags: ["Creative", "Rights Management", "Legal", "Technology"]
   }
 ];
 
