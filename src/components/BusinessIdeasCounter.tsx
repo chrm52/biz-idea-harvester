@@ -7,7 +7,14 @@ const BusinessIdeasCounter = () => {
   
   useEffect(() => {
     // Get the total count of business ideas in the database
-    setCount(expandedBusinessIdeas.length);
+    const totalCount = expandedBusinessIdeas.length;
+    setCount(totalCount);
+    
+    // Log the count to console for reference
+    console.log(`Total business ideas in database: ${totalCount}`);
+    
+    // Log some sample ideas to verify the data
+    console.log('Sample ideas:', expandedBusinessIdeas.slice(0, 3));
   }, []);
   
   return (
