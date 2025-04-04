@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowRight, ArrowLeft, Check } from 'lucide-react';
@@ -13,7 +12,6 @@ interface UserFormData {
   investmentLevel: string;
   location: string;
   goals: string[];
-  // New fields
   educationBackground: string;
   timeCommitment: string;
   targetMarket: string;
@@ -31,7 +29,6 @@ const initialFormData: UserFormData = {
   investmentLevel: 'low',
   location: '',
   goals: [],
-  // New fields initialized
   educationBackground: '',
   timeCommitment: 'part-time',
   targetMarket: 'local',
@@ -57,7 +54,6 @@ const goalOptions = [
   'Creative Outlet', 'Social Impact', 'Wealth Building'
 ];
 
-// New options for added fields
 const industryOptions = [
   'E-commerce', 'SaaS', 'Health & Wellness', 'Education', 'Finance', 
   'Food & Beverage', 'Real Estate', 'Media & Entertainment', 'Manufacturing', 'Consulting'
@@ -119,17 +115,18 @@ const UserForm = () => {
 
   const handleCheckboxChange = (category: keyof Pick<UserFormData, 'skills' | 'interests' | 'goals' | 'businessModelPreference' | 'industries'>, value: string) => {
     setFormData(prev => {
+      let updatedItems;
+      
       if (prev[category].includes(value)) {
-        return {
-          ...prev,
-          [category]: prev[category].filter(item => item !== value)
-        };
+        updatedItems = prev[category].filter(item => item !== value);
       } else {
-        return {
-          ...prev,
-          [category]: [...prev[category], value]
-        };
+        updatedItems = [...prev[category], value];
       }
+      
+      return {
+        ...prev,
+        [category]: updatedItems
+      };
     });
   };
 
@@ -157,10 +154,8 @@ const UserForm = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Store form data in sessionStorage
     sessionStorage.setItem('userFormData', JSON.stringify(formData));
     
-    // Simulate API call with artificial delay
     setTimeout(() => {
       setIsSubmitting(false);
       toast.success("Information submitted successfully!");
